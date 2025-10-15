@@ -414,7 +414,7 @@ export default function Home() {
                   className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-7 font-semibold hover-lift glow-primary"
                   asChild
                 >
-                  <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5582996012515" target="_blank" rel="noopener noreferrer">
                     <MessageSquare className="mr-2 w-6 h-6" />
                     WhatsApp
                   </a>
@@ -426,7 +426,7 @@ export default function Home() {
                   asChild
                 >
                   <a href="mailto:contato@exyralabs.com">
-                    <Mail className="mr-2 w-6 h-6" />
+                    <Mail className="mr-2 w-6 h-6 emailbtn" />
                     E-mail
                   </a>
                 </Button>
@@ -484,7 +484,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2">
                   <MessageSquare className="w-4 h-4" />
-                  <a href="https://wa.me/5511999999999" className="hover:text-foreground transition-colors">
+                  <a href="https://wa.me/5582996012515" className="hover:text-foreground transition-colors">
                     WhatsApp
                   </a>
                 </li>

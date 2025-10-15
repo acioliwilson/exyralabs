@@ -298,10 +298,10 @@
   transform: translateY(-4px);
 }
 
-.text-light {
+.text-light, .emailbtn {
   color: #FFF !important;
 }
 
-.text-light:hover {
+.text-light, .emailbtn:hover {
   color: #FFF !important;
 }
