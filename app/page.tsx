@@ -2,14 +2,9 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Logo } from "@/components/logo"
 import { AnimatedSection } from "@/components/animated-section"
+import { MessageSquare, Zap, TrendingUp, Bot, Workflow, Sparkles, Gift, CheckCircle2, ArrowRight } from 'lucide-react'
 import {
-  ArrowRight,
-  Zap,
   Clock,
-  TrendingUp,
-  MessageSquare,
-  Bot,
-  Sparkles,
   Check,
   Mail,
   Instagram,
@@ -17,6 +12,16 @@ import {
 } from "lucide-react"
 
 export default function Home() {
+  // const [isVisible, setIsVisible] = useState(false)
+  // const leadMagnetRef = useRef<HTMLElement>(null)
+
+  // useEffect(() => {
+  //   setIsVisible(true)
+  // }, [])
+
+  // const scrollToLeadMagnet = () => {
+  //   leadMagnetRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  // }
   return (
     <main className="min-h-screen bg-background">
       {/* Header */}
@@ -124,6 +129,106 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Lead Magnet Section - NEW */}
+      <section 
+        className="container mx-auto px-6 py-20"
+      >
+        <div className="max-w-5xl mx-auto">
+          <Card className="relative overflow-hidden border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-orange-500/10 backdrop-blur-sm">
+            {/* Decorative Elements */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/20 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-orange-500/20 rounded-full blur-3xl" />
+            
+            <div className="relative z-10 p-8 md:p-12">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                {/* Left Side - Value Proposition */}
+                <div className="text-center md:text-left">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/20 to-orange-500/20 border border-cyan-500/30 mb-6">
+                    <Gift className="w-5 h-5 text-cyan-400" />
+                    <span className="text-cyan-400 font-semibold">GRÁTIS · Por Tempo Limitado</span>
+                  </div>
+                  
+                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-balance">
+                    Receba sua{' '}
+                    <span className="bg-gradient-to-r from-cyan-400 to-orange-500 bg-clip-text text-transparent">
+                      Mini Auditoria WhatsApp
+                    </span>
+                  </h2>
+                  
+                  <p className="text-lg text-gray-300 mb-6 text-balance">
+                    Descubra como transformar seu WhatsApp em uma máquina de vendas com{' '}
+                    <span className="text-cyan-400 font-semibold">3 super dicas exclusivas</span>
+                  </p>
+
+                  {/* Benefits List */}
+                  <div className="space-y-3 mb-8">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-300 text-left">
+                        <span className="font-semibold text-white">Análise personalizada</span> do seu potencial de automação
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-300 text-left">
+                        <span className="font-semibold text-white">3 dicas práticas</span> para aumentar suas vendas agora
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-300 text-left">
+                        <span className="font-semibold text-white">Estratégias exclusivas</span> usadas por empresas de sucesso
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-sm text-gray-400">
+                    <div className="flex -space-x-2">
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-600 border-2 border-[#0a1628]" />
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-[#0a1628]" />
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-cyan-400 to-orange-400 border-2 border-[#0a1628]" />
+                    </div>
+                    <span>Mais de <span className="text-white font-semibold">200+ empresas</span> já receberam</span>
+                  </div>
+                </div>
+
+                {/* Right Side - Google Form */}
+                <div className="relative">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-orange-500 rounded-2xl blur opacity-20" />
+                  <div className="relative bg-[#0a1628] rounded-2xl p-6 border border-cyan-500/30">
+                    <h3 className="text-xl font-bold text-white mb-4 text-center">
+                      Preencha os dados abaixo
+                    </h3>
+                    <p className="text-sm text-gray-400 mb-6 text-center">
+                      Receba sua auditoria por e-mail em até 24h
+                    </p>
+                    
+                    {/* Google Form Iframe */}
+                    <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-cyan-500/20">
+                      <iframe
+                        src="https://forms.gle/mSYu1RcKXpAEcbFb6"
+                        width="100%"
+                        height="100%"
+                        className="bg-white"
+                      >
+                        Carregando…
+                      </iframe>
+                    </div>
+                    
+                    <div className="flex items-center justify-center gap-2 mt-4 text-xs text-gray-500">
+                      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                      <span>Seus dados estão seguros conosco</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
